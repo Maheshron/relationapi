@@ -14,14 +14,14 @@ class BookController extends Controller
         if($data){
         return response([
             'status'=>1,
-            'message'=>'Rest Data',
+            'message'=>'Book Data',
             'data'=>$data
             ]);
         }
         else{
             return response([
                 'status'=>0,
-                'message'=>'Rest Data',
+                'message'=>'No Book Data',
                 
                 ]);
         } 
@@ -31,7 +31,7 @@ class BookController extends Controller
         if($insert){
             return response([
                 'status'=>1,
-                'message'=>'data inserted',
+                'message'=>'Book data inserted',
             ]);
         }
         else{
