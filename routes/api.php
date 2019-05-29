@@ -28,3 +28,23 @@ Route::post('/getbooks','BookController@addbooks');
 Route::post('/updatebook','BookController@updatebook');
 Route::post('/deletebook','BookController@deletebook');
 
+// State Routes
+Route::get('/states','StateController@getstate');
+Route::post('/state','StateController@addstate');
+Route::post('/state/update','StateController@updatestate');
+Route::post('/state/delete','StateController@deletestate');
+
+// District Routes
+
+Route::get('/districts','DistrictController@getdistrict');
+Route::post('/district','DistrictController@adddistrict');
+Route::post('/district/update','DistrictController@updatedistrict');
+Route::post('/district/delete','DistrictController@deletedistrict');
+
+//Village Routes
+
+Route::get('/villages','VillageController@getvillage');
+Route::post('/village','VillageController@addvillage');
+Route::post('/village/update','VillageController@updatevillage');
+Route::post('/village/delete','VillageController@deletevillage');
+
